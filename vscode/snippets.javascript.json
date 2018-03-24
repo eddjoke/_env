@@ -1,0 +1,30 @@
+{
+  "Add propTypes": {
+    "prefix": "propt",
+    "body": ["propTypes = {\n  $1\n}"]
+  },
+  "defaultProps": {
+    "prefix": "defp",
+    "body": ["defaultProps = {\n  $1\n}"]
+  },
+  "React functional component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst $1 = ({$2}) => (\n\t<div>\n\t\t$0\n  </div>\n);\n\n$1.propTypes = {\n\t\n};\n\n$1.defaultProps = {\n\n};\n\nexport default $1;"
+    ]
+  },
+  "React class component": {
+    "prefix": "rcc",
+    "body": [
+      "import React from 'react';\nimport PropTypes from 'prop-types';\n\nclass $1 extends React.Component {\n\trender() {\n\t\tconst { $2 } = this.props;\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$3\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n$1.propTypes = {\n\n};\n\nexport default $1;"
+    ]
+  },
+  "Javascript function": {
+    "prefix": "fn",
+    "body": ["function $1($2) {\n\treturn $0;\n}"]
+  },
+  "Javascript arrow function": {
+    "prefix": "fna",
+    "body": ["const $1 = ($2) => $3;"]
+  }
+}

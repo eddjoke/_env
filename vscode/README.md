@@ -50,6 +50,10 @@ Nice to have:
 * [node readme](https://marketplace.visualstudio.com/items?itemName=bengreenier.vscode-node-readme) - readme file preview
 * [reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets) - code snippets for react development
 
+### Snippets
+
+* [snippets.javascript.json](snippets.javascript.json)
+
 ### EditorConfig
 
 * [.editorconfig](.editorconfig)
