@@ -52,4 +52,4 @@ Nice to have:
 
 ### EditorConfig
 
-| `.editorconfig`
+* [.editorconfig](.editorconfig)
