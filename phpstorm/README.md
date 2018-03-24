@@ -78,3 +78,40 @@ function $FUNCTION_NAME$($PARAMS$) {
 ```
 const $FUNCTION_NAME$ = ($PARAMS$) => $RESULT$;
 ```
+
+## ESLint autofix and current file linting
+
+Eslint shows warnings and errors when code is not well formatted. You can initiate autofixing command to fix the issues for you!
+Full tutorial here: https://blog.jetbrains.com/webstorm/2016/08/using-external-tools/
+
+First, you need to set an external tool and then set a shortcut to call it.
+
+1: Set an external tool: ![image](/images/eslint-as-external-tool-setup.png)
+
+```
+ESLint fix
+Automatically fix issue with locally installed ESLint
+
+./node_modules/.bin/eslint
+--fix --color $FilePathRelativeToProjectRoot$
+$ProjectFileDir$
+```
+
+and
+
+```
+ESLint
+Lint the current file with locally installed ESLint
+
+./node_modules/.bin/eslint
+--color $FilePathRelativeToProjectRoot$
+$ProjectFileDi]$
+```
+
+2: Set a shortcut for external tool: ![image](/images/eslint-shortcut-setup.png)
+
+I have set it to my personal shortcut `Ctrl+Alt+L` to lint the code and `Ctrl+Alt+F` to fix the code.
+
+P.s. Macro can be created and shortcut can be set to "Autofix and save" if necessary.
+
+#### Note: ESlint takes locally installed package, so linters will not work if you don't have eslint package under node_modules.
