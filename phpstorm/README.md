@@ -35,8 +35,6 @@ $COMPONENT$.defaultProps = {
 export default $COMPONENT$;
 ```
 
----
-
 ### **rcc** (react class component):
 
 ```
@@ -61,8 +59,6 @@ $COMPONENT$.propTypes = {
 export default $COMPONENT$;
 ```
 
----
-
 ### **fn** (general JavaScript function)
 
 ```
@@ -70,8 +66,6 @@ function $FUNCTION_NAME$($PARAMS$) {
   return $RESULT$;
 }
 ```
-
----
 
 ### **fna** (ES6 arrow function)
 
@@ -86,7 +80,7 @@ Full tutorial here: https://blog.jetbrains.com/webstorm/2016/08/using-external-t
 
 First, you need to set an external tool and then set a shortcut to call it.
 
-1: Set an external tool: ![image](/images/eslint-as-external-tool-setup.png)
+1: Set an external tool: ![image](./images/eslint-as-external-tool-setup.png)
 
 ```
 ESLint fix
@@ -108,7 +102,7 @@ Lint the current file with locally installed ESLint
 $ProjectFileDi]$
 ```
 
-2: Set a shortcut for external tool: ![image](/images/eslint-shortcut-setup.png)
+2: Set a shortcut for external tool: ![image](./images/eslint-shortcut-setup.png)
 
 I have set it to my personal shortcut `Ctrl+Alt+L` to lint the code and `Ctrl+Alt+F` to fix the code.
 

@@ -1,3 +1,4 @@
 ## Environment setup for IDE
 
-* [vscode](vscode/README.md)
+* [VSCode](vscode/README.md)
+* [PhpStorm](phpstorm/README.md)
